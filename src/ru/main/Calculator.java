@@ -14,6 +14,7 @@ public class Calculator {
         this.b = b;
     }
 
+//    Выполнить арифметическую операцию
     public int perform() {
         int result = 0;
         switch (operation) {
@@ -30,7 +31,7 @@ public class Calculator {
                 result = a / b;
                 break;
             default:
-                throw new ArithmeticException("Арифметическая операция, превышающая возможности этого калькулятора!");
+                throw new ArithmeticException("Введена арифметическая операция, превышающая возможности этого калькулятора!");
         }
         return result;
     }
